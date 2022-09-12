@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgba(247, 247, 247, 0.897); 
+ }
+
+ .header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 2rem auto;
+ }
+
+ .header h2 {
+     font-size: 3rem;
+     font-weight: 600;
+ }
+
+.main-container {
+    margin: 6rem auto;
+    max-width: 80%;
+}
+
+.content {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.card{
+    max-width: 33.3%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgba(167, 167, 168, 0.041);
+    padding: 1.2rem 2.2rem;
+    box-shadow: 0 0 0.5rem rgba(8, 85, 228, 0.829);
+    margin: 0.8rem 1rem;
+}
+
+
+.card_head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.card_head div {
+    margin: 1rem auto;
+}
+
+.card_head h3 {
+    font-size: 2rem;
+}
+
+.card_head span {
+    background-color: rgba(8, 85, 228, 0.705);
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-inline: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.card_body {
+    margin: 2rem 0;
+}
+
+.card_footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card_footer a{
+    border: 2px solid rgba(8, 85, 228, 0.705);
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: rgba(8, 85, 228, 0.829);
+    color: white
+}
+
+.card_footer a:hover {
+    background-color: rgb(7, 35, 87);
+}
+
+.admin {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.admin_list{
+    margin-inline: 0.4rem;
+}
+
+.admin_details {
+    margin-inline: 0.6rem;
+}
+
+.admin_details h3 {
+    font-size: 1.5rem;
+}
+
+
+.admin_details h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+.admin_list span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 2px solid rgba(8, 85, 228, 0.829);;
+}
+
+
+@media screen and (max-width: 998.2px) {
+
+    .header h2 {
+       text-align: center;
+    }
+
+    .main-container {
+        max-width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card_head  {
+        flex-direction: column;
+    }
+
+    .card_head div {
+        margin: 0.6rem 0;
+    }
+}
